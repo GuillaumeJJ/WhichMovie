@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :cinemas
+
   resources :films
 
   get 'home/index'

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ville: MyString
+  adresse: MyString
+  seancehoraire: 2014-11-06 18:36:34
+
+two:
+  ville: MyString
+  adresse: MyString
+  seancehoraire: 2014-11-06 18:36:34
