@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  titre: MyString
+  realisateur: MyString
+  acteurs: MyString
+  BO: MyString
+  synopsis: MyString
+  datesortie: 2014-11-06
+
+two:
+  titre: MyString
+  realisateur: MyString
+  acteurs: MyString
+  BO: MyString
+  synopsis: MyString
+  datesortie: 2014-11-06

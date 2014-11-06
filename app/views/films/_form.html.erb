@@ -1,0 +1,44 @@
+<%= form_for @film, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :titre, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :titre, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :realisateur, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :realisateur, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :acteurs, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :acteurs, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :BO, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :BO, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :synopsis, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :synopsis, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :datesortie, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :datesortie, :class => 'text_field' %>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                films_path, :class => 'btn' %>
+  </div>
+<% end %>

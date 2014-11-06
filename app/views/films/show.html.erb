@@ -1,0 +1,31 @@
+<%- model_class = Film -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:titre) %>:</strong></dt>
+  <dd><%= @film.titre %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:realisateur) %>:</strong></dt>
+  <dd><%= @film.realisateur %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:acteurs) %>:</strong></dt>
+  <dd><%= @film.acteurs %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:BO) %>:</strong></dt>
+  <dd><%= @film.BO %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:synopsis) %>:</strong></dt>
+  <dd><%= @film.synopsis %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:datesortie) %>:</strong></dt>
+  <dd><%= @film.datesortie %></dd>
+</dl>
+
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              films_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_film_path(@film), :class => 'btn' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              film_path(@film),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+</div>
