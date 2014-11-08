@@ -223,8 +223,6 @@ Film.create(
 	)
 
 Film.create(
-<<<<<<< Updated upstream
-=======
 	titre: "Samba",
 	realisateur: "Eric Toledano, Olivier Nakache",
 	acteurs: "Omar Sy, Charlotte Gainsbourg, Tahar Rahim",
@@ -233,7 +231,6 @@ Film.create(
 	datesortie:"2014-10-15",
 	)
 Film.create(
->>>>>>> Stashed changes
 	titre: "The Giver",
 	realisateur: "Philippe Noyce",
 	acteurs: "Jeff Bridges, Meryl Streep, Brenton Thwaites",
@@ -241,3 +238,33 @@ Film.create(
 	synopsis:"Dans un futur lointain, les émotions ont été éradiquées en supprimant toute trace d'histoire. Seul The Giver a la lourde tâche de se souvenir du passé, en cas de nécessité. On demande alors au jeune Jonas de devenir le prochain Giver...",
 	datesortie:"2014-9-29",
 	)
+
+
+
+
+Cinema.create(
+	ville:"La Rochelle",
+	adresse:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d355165.482503539!2d-0.9616969999999996!3d45.93668929999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480153b86841cf7d%3A0x797ae70739d1b534!2sCinema+Mega+CGR!5e0!3m2!1sfr!2sfr!4v1415486048531",
+	seancehoraire: "20h,22h",
+	)
+
+Cinema.create(
+	ville:"Niort",
+	adresse:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44098.745691729666!2d-0.48705331158892307!3d46.306429303164435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480731cca6fa24b3%3A0x6b467f65b53c06af!2sCin%C3%A9ma+Mega+CGR+Niort!5e0!3m2!1sfr!2sfr!4v1415487077521",
+	seancehoraire: "20h,22h",
+	)
+
+Cinema.create(
+	ville:"Paris 2",
+	adresse:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10497.641135985043!2d2.3470599!3d48.86945467787054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e16700b27cf%3A0xd6dba8b280e44e1d!2sLe+Grand+Rex!5e0!3m2!1sfr!2sfr!4v1415487314662",
+	seancehoraire: "18h,20h,22h",
+	)
+
+Cinema.create(
+	ville:"Paris 18",#PathéWepler
+	adresse:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.6459809941102!2d2.3281749999999923!3d48.884025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e4c4f198ba5%3A0x25dbf3af62db3f!2sPath%C3%A9+Wepler!5e0!3m2!1sfr!2sfr!4v1415487495814",
+	seancehoraire: "16h,18h,20h,22h",
+	)
+
+
+

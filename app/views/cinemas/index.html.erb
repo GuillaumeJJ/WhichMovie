@@ -9,8 +9,6 @@
       <th><%= model_class.human_attribute_name(:ville) %></th>
       <th><%= model_class.human_attribute_name(:adresse) %></th>
       <th><%= model_class.human_attribute_name(:seancehoraire) %></th>
-      <th><%= model_class.human_attribute_name(:created_at) %></th>
-      <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
   <tbody>
@@ -18,9 +16,8 @@
       <tr>
         <td><%= link_to cinema.id, cinema_path(cinema) %></td>
         <td><%= cinema.ville %></td>
-        <td><%= cinema.adresse %></td>
+        <td><iframe src="<%=cinema.adresse%>" width="600" height="90" frameborder="0" style="border:0"></iframe></td>
         <td><%= cinema.seancehoraire %></td>
-        <td><%=l cinema.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_cinema_path(cinema), :class => 'btn btn-mini' %>

@@ -7,7 +7,7 @@
   <dt><strong><%= model_class.human_attribute_name(:ville) %>:</strong></dt>
   <dd><%= @cinema.ville %></dd>
   <dt><strong><%= model_class.human_attribute_name(:adresse) %>:</strong></dt>
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2813.360219033388!2d1.533937!3d45.15955499999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f897c5a749cadb%3A0x4329f7ccf8f97706!2sCin%C3%A9ma+Mega+CGR+Brive-la-Gaillarde!5e0!3m2!1sfr!2sfr!4v1415296355384" width="600" height="450" frameborder="0" style="border:0"></iframe>
+<iframe src="<%=@cinema.adresse%>" width="600" height="450" frameborder="0" style="border:0"></iframe>
   <dt><strong><%= model_class.human_attribute_name(:seancehoraire) %>:</strong></dt>
   <dd><%= @cinema.seancehoraire %></dd>
 </dl>
