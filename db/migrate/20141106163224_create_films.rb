@@ -7,6 +7,7 @@ class CreateFilms < ActiveRecord::Migration
       t.string :BO
       t.string :synopsis
       t.date :datesortie
+      t.string :affiche
 
       t.timestamps
     end

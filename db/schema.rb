@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20141106173634) do
     t.string   "BO"
     t.string   "synopsis"
     t.date     "datesortie"
+    t.string   "affiche"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

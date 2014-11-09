@@ -9,10 +9,8 @@
       <th><%= model_class.human_attribute_name(:titre) %></th>
       <th><%= model_class.human_attribute_name(:realisateur) %></th>
       <th><%= model_class.human_attribute_name(:acteurs) %></th>
-      <th><%= model_class.human_attribute_name(:BO) %></th>
-      <th><%= model_class.human_attribute_name(:synopsis) %></th>
+      <th><%= model_class.human_attribute_name(:affiche) %></th>
       <th><%= model_class.human_attribute_name(:datesortie) %></th>
-      <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
@@ -23,10 +21,8 @@
         <td><%= film.titre %></td>
         <td><%= film.realisateur %></td>
         <td><%= film.acteurs %></td>
-        <td><%= film.BO %></td>
-        <td><%= film.synopsis %></td>
+        <td><img src="<%= film.affiche %>" style="width:300px" /></td>
         <td><%= film.datesortie %></td>
-        <td><%=l film.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_film_path(film), :class => 'btn btn-mini' %>
