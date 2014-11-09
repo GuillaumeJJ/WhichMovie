@@ -3,9 +3,9 @@
 one:
   ville: MyString
   adresse: MyString
-  seancehoraire: 2014-11-06 18:36:34
+  seancehoraire: MyString
 
 two:
   ville: MyString
   adresse: MyString
-  seancehoraire: 2014-11-06 18:36:34
+  seancehoraire: MyString

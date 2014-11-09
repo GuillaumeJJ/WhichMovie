@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20141106173634) do
   create_table "cinemas", force: true do |t|
     t.string   "ville"
     t.string   "adresse"
-    t.datetime "seancehoraire"
+    t.string   "seancehoraire"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

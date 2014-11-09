@@ -3,7 +3,7 @@ class CreateCinemas < ActiveRecord::Migration
     create_table :cinemas do |t|
       t.string :ville
       t.string :adresse
-      t.datetime :seancehoraire
+      t.string :seancehoraire
 
       t.timestamps
     end
