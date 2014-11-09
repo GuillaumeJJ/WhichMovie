@@ -4,8 +4,10 @@ one:
   ville: MyString
   adresse: MyString
   seancehoraire: MyString
+  nom: MyString
 
 two:
   ville: MyString
   adresse: MyString
   seancehoraire: MyString
+  nom: MyString

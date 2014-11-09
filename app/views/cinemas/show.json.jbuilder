@@ -1,1 +1,1 @@
-json.extract! @cinema, :id, :ville, :adresse, :seancehoraire, :created_at, :updated_at
+json.extract! @cinema, :id, :ville, :adresse, :nom, :seancehoraire, :created_at, :updated_at

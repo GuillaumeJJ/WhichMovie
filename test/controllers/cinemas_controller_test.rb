@@ -18,7 +18,7 @@ class CinemasControllerTest < ActionController::TestCase
 
   test "should create cinema" do
     assert_difference('Cinema.count') do
-      post :create, cinema: { adresse: @cinema.adresse, seancehoraire: @cinema.seancehoraire, ville: @cinema.ville }
+      post :create, cinema: { adresse: @cinema.adresse, seancehoraire: @cinema.seancehoraire, ville: @cinema.ville, nom:@cinema.nom }
     end
 
     assert_redirected_to cinema_path(assigns(:cinema))
@@ -35,7 +35,7 @@ class CinemasControllerTest < ActionController::TestCase
   end
 
   test "should update cinema" do
-    patch :update, id: @cinema, cinema: { adresse: @cinema.adresse, seancehoraire: @cinema.seancehoraire, ville: @cinema.ville }
+    patch :update, id: @cinema, cinema: { adresse: @cinema.adresse, seancehoraire: @cinema.seancehoraire, ville: @cinema.ville, nom:@cinema.nom }
     assert_redirected_to cinema_path(assigns(:cinema))
   end
 

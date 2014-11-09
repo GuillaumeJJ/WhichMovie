@@ -4,6 +4,7 @@ class CreateCinemas < ActiveRecord::Migration
       t.string :ville
       t.string :adresse
       t.string :seancehoraire
+      t.string :nom
 
       t.timestamps
     end

@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20141106173634) do
     t.string   "ville"
     t.string   "adresse"
     t.string   "seancehoraire"
+    t.string   "nom"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

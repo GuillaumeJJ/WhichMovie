@@ -131,26 +131,30 @@ Film.create(
 
 Cinema.create(
 	ville:"La Rochelle",
+	nom: "Méga CGR",
 	adresse:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d355165.482503539!2d-0.9616969999999996!3d45.93668929999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480153b86841cf7d%3A0x797ae70739d1b534!2sCinema+Mega+CGR!5e0!3m2!1sfr!2sfr!4v1415486048531",
 	seancehoraire: "20h,22h",
 	)
 
 Cinema.create(
 	ville:"Niort",
+	nom: "Méga CGR",
 	adresse:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44098.745691729666!2d-0.48705331158892307!3d46.306429303164435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480731cca6fa24b3%3A0x6b467f65b53c06af!2sCin%C3%A9ma+Mega+CGR+Niort!5e0!3m2!1sfr!2sfr!4v1415487077521",
 	seancehoraire: "20h,22h",
 	)
 
 Cinema.create(
 	ville:"Paris 2",
+	nom: "Le grand Rex",
 	adresse:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10497.641135985043!2d2.3470599!3d48.86945467787054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e16700b27cf%3A0xd6dba8b280e44e1d!2sLe+Grand+Rex!5e0!3m2!1sfr!2sfr!4v1415487314662",
 	seancehoraire: "18h,20h,22h",
 	)
 
 Cinema.create(
-	ville:"Paris 18",#PathéWepler
+	ville:"Paris 18",
+	nom:"PathéWepler",
 	adresse:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.6459809941102!2d2.3281749999999923!3d48.884025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e4c4f198ba5%3A0x25dbf3af62db3f!2sPath%C3%A9+Wepler!5e0!3m2!1sfr!2sfr!4v1415487495814",
-	seancehoraire: "16hhhhhhhhh",
+	seancehoraire: "16h",
 	)
 
 

@@ -7,6 +7,7 @@
     <tr>
       <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:ville) %></th>
+      <th><%= model_class.human_attribute_name(:nom) %></th>
       <th><%= model_class.human_attribute_name(:adresse) %></th>
       <th><%= model_class.human_attribute_name(:seancehoraire) %></th>
     </tr>
@@ -16,6 +17,7 @@
       <tr>
         <td><%= link_to cinema.id, cinema_path(cinema) %></td>
         <td><%= cinema.ville %></td>
+        <td><%= cinema.nom %></td>
         <td><iframe src="<%=cinema.adresse%>" width="600" height="90" frameborder="0" style="border:0"></iframe></td>
         <td><%= cinema.seancehoraire %></td>
         <td>
