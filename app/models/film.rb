@@ -1,3 +1,4 @@
 class Film < ActiveRecord::Base
-	has_many :cinema
+	attr_accessible :titre, :realisateur, :acteurs, :BO, :synopsis, :datesortie, :affiche
+	has_many :cinemas
 end

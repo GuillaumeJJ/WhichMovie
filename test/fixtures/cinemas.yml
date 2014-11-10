@@ -5,9 +5,11 @@ one:
   adresse: MyString
   seancehoraire: MyString
   nom: MyString
+  film_id: 1
 
 two:
   ville: MyString
   adresse: MyString
   seancehoraire: MyString
   nom: MyString
+  film_id:1

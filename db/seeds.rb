@@ -134,20 +134,34 @@ Cinema.create(
 	nom: "Méga CGR",
 	adresse:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d355165.482503539!2d-0.9616969999999996!3d45.93668929999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480153b86841cf7d%3A0x797ae70739d1b534!2sCinema+Mega+CGR!5e0!3m2!1sfr!2sfr!4v1415486048531",
 	seancehoraire: "20h,22h",
+	film_id: "1", 
 	)
+
+ Cinema.create(
+	ville:"La Rochelle",
+	nom: "Méga CGR",
+	adresse:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d355165.482503539!2d-0.9616969999999996!3d45.93668929999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480153b86841cf7d%3A0x797ae70739d1b534!2sCinema+Mega+CGR!5e0!3m2!1sfr!2sfr!4v1415486048531",
+	seancehoraire: "20h,22h",
+	film_id: "4", 
+	)
+
+ # Tout le problème ici consiste à trouver quelquechose de pratique pour assigner un cinema à plusieurs films
+ # J'ai essayé avec une boucle for, sans succès. à retenter à mon avis
 
 Cinema.create(
 	ville:"Niort",
 	nom: "Méga CGR",
 	adresse:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44098.745691729666!2d-0.48705331158892307!3d46.306429303164435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480731cca6fa24b3%3A0x6b467f65b53c06af!2sCin%C3%A9ma+Mega+CGR+Niort!5e0!3m2!1sfr!2sfr!4v1415487077521",
 	seancehoraire: "20h,22h",
-	)
+	film_id: "[1,3,4,5,6,7]",
+	) # Ne marche pas.... rien ne se crée.
 
 Cinema.create(
 	ville:"Paris 2",
 	nom: "Le Grand Rex",
 	adresse:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10497.641135985043!2d2.3470599!3d48.86945467787054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e16700b27cf%3A0xd6dba8b280e44e1d!2sLe+Grand+Rex!5e0!3m2!1sfr!2sfr!4v1415487314662",
 	seancehoraire: "18h,20h,22h",
+	film_id: "2",
 	)
 
 Cinema.create(
@@ -155,6 +169,7 @@ Cinema.create(
 	nom:"Pathé Wepler",
 	adresse:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.6459809941102!2d2.3281749999999923!3d48.884025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e4c4f198ba5%3A0x25dbf3af62db3f!2sPath%C3%A9+Wepler!5e0!3m2!1sfr!2sfr!4v1415487495814",
 	seancehoraire: "16h",
+	film_id: "2",
 	)
 
 Cinema.create(
@@ -162,6 +177,7 @@ Cinema.create(
 	nom:"Marignan",
 	adresse:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10497.85902373361!2d2.305984828436543!3d48.8684161263118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fc45e2f711d%3A0x821669f6980d0541!2sCin%C3%A9ma+Gaumont+Champs-Elys%C3%A9es+Marignan!5e0!3m2!1sfr!2sfr!4v1415556103542",
 	seancehoraire: "11h,14h,16h,18h,21h",
+	film_id: "2",
 	)
 
 Cinema.create(
@@ -169,6 +185,7 @@ Cinema.create(
 	nom:"Pathé Atlantis",
 	adresse:"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d86705.9527758868!2d-1.632371!3d47.225171!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9b86a4aa3c7486b5!2sAtlantis!5e0!3m2!1sfr!2sus!4v1415556242253",
 	seancehoraire: "14h,16h,18h",
+	film_id: "2",
 	)
 
 
@@ -177,6 +194,7 @@ Cinema.create(
 	nom:"Gaumont Talence",
 	adresse:"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11321.68778010344!2d-0.5916476640509188!3d44.8129679781391!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x254f54e406b506b3!2sCin%C3%A9ma+Gaumont+Talence!5e0!3m2!1sfr!2sus!4v1415556735635",
 	seancehoraire: "11h,18h,22h",
+	film_id: "2",
 	)
 
 
@@ -185,6 +203,7 @@ Cinema.create(
 	nom:"Mégarama",
 	adresse:"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11316.129875039986!2d-0.5631246982656883!3d44.84127212158139!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x21ebf1115e086901!2zQ2luw6ltYSBNw6lnYXJhbWE!5e0!3m2!1sfr!2sus!4v1415556760919",
 	seancehoraire: "12h,14h,19h",
+	film_id: "2",
 	)
 
 
@@ -193,6 +212,7 @@ Cinema.create(
 	nom:"Grand Action",
 	adresse:"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10502.224888898903!2d2.351555503470743!3d48.847602971704646!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8de415f5018a1843!2sLe+Grand+Action!5e0!3m2!1sfr!2sus!4v1415556810237",
 	seancehoraire: "15h30,18h",
+	film_id: "2",
 	)
 
 
@@ -201,6 +221,7 @@ Cinema.create(
 	nom:"Champo",
 	adresse:"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d21003.40194515502!2d2.341821709115333!3d48.85010095868028!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9fb179759d80231a!2sLe+Champo!5e0!3m2!1sfr!2sus!4v1415556589423",
 	seancehoraire: "16h30",
+	film_id: "2",
 	)
 
 
@@ -209,6 +230,7 @@ Cinema.create(
 	nom:"Desperado",
 	adresse:"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d21004.268075342574!2d2.347584709115333!3d48.84803614919477!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc8bbf668edc96556!2sLe+Desperado!5e0!3m2!1sfr!2sus!4v1415556642837",
 	seancehoraire: "12h,14h,19h",
+	film_id: "2",
 	)
 
 
@@ -217,6 +239,7 @@ Cinema.create(
 	nom:"Odyssée",
 	adresse:"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2639.4223873584283!2d7.745809786775261!3d48.58261080228794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x944d5533ec1dd4a1!2zQ2luw6ltYSBPZHlzc8OpZQ!5e0!3m2!1sfr!2sus!4v1415557134615",
 	seancehoraire: "10h,14h30",
+	film_id: "2",
 	)
 
 
@@ -225,6 +248,7 @@ Cinema.create(
 	nom:"Le Métropole",
 	adresse:"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5060.998571625413!2d3.0665923042686143!3d50.636417860986825!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc0f6c3f9cf7cbd22!2sLe+M%C3%A9tropole!5e0!3m2!1sfr!2sus!4v1415557181084",
 	seancehoraire: "12h,16h,20h30",
+	film_id: "2",
 	)
 
 
@@ -233,6 +257,7 @@ Cinema.create(
 	nom:"Pathé Bellecour",
 	adresse:"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11134.563413777982!2d4.835087081202587!3d45.758345575284174!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa0c681d19b16dde7!2sPath%C3%A9+Bellecour!5e0!3m2!1sfr!2sus!4v1415557242154",
 	seancehoraire: "10h,12h,14h,16h,19h,21h",
+	film_id: "3",
 	)
 
 
@@ -241,5 +266,8 @@ Cinema.create(
 	nom:"Méga CGR",
 	adresse:"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11150.487535907318!2d4.776328005251713!3d45.67849054929125!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x52b21e1f734e7619!2sMega+CGR!5e0!3m2!1sfr!2sus!4v1415557288228",
 	seancehoraire: "9h30,14h30,18h30",
+	film_id: "3",
 	)
+
+
 

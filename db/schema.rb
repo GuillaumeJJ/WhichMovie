@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20141106173634) do
     t.string   "adresse"
     t.string   "seancehoraire"
     t.string   "nom"
+    t.integer  "film_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
