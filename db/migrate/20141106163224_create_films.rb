@@ -5,7 +5,7 @@ class CreateFilms < ActiveRecord::Migration
       t.string :realisateur
       t.string :acteurs
       t.string :BO
-      t.string :synopsis
+      t.text :synopsis
       t.date :datesortie
       t.string :affiche
 

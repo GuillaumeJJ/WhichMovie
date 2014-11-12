@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 20141106173634) do
     t.string   "realisateur"
     t.string   "acteurs"
     t.string   "BO"
-    t.string   "synopsis"
+    t.text     "synopsis"
     t.date     "datesortie"
     t.string   "affiche"
     t.datetime "created_at"
