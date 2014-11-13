@@ -23,4 +23,3 @@ test:
   <<: *default
   database: db/test.sqlite3
 
-
