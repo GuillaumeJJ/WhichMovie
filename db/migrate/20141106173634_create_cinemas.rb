@@ -2,7 +2,7 @@ class CreateCinemas < ActiveRecord::Migration
   def change
     create_table :cinemas do |t|
       t.string :ville
-      t.string :adresse
+      t.text :adresse
       t.string :seancehoraire
       t.string :nom
       t.integer :film_id
