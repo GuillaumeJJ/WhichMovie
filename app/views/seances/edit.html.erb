@@ -2,5 +2,5 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @seance %> |
-<%= link_to 'Back', seances_path %>
+<%= link_to 'Show', cinema_seance_path(@cinema,@seance) %> |
+<%= link_to 'Back', cinema_seances_path(@cinema) %>

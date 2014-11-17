@@ -16,9 +16,9 @@
         <td><%= seance.heure %></td>
         <td><%= seance.film_id %></td>
         <td><%= seance.cinema_id %></td>
-        <td><%= link_to 'Show', seance %></td>
-        <td><%= link_to 'Edit', edit_seance_path(seance) %></td>
-        <td><%= link_to 'Destroy', seance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', cinema_seance_path(@cinema,seance) %></td>
+        <td><%= link_to 'Edit', edit_cinema_seance_path(@cinema, seance) %></td>
+        <td><%= link_to 'Destroy', [@cinema, seance], method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Seance', new_seance_path %>
+if <%= link_to 'New Seance', new_cinema_seance_path(@cinema) %>

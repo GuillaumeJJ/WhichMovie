@@ -1,4 +1,4 @@
-<%= form_for(@seance) do |f| %>
+<%= form_for([@cinema, @seance]) do |f| %>
   <% if @seance.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@seance.errors.count, "error") %> prohibited this seance from being saved:</h2>
@@ -27,3 +27,4 @@
     <%= f.submit %>
   </div>
 <% end %>
+

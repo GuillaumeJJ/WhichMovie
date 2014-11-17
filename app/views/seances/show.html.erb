@@ -15,5 +15,5 @@
   <%= @seance.cinema_id %>
 </p>
 
-<%= link_to 'Edit', edit_seance_path(@seance) %> |
-<%= link_to 'Back', seances_path %>
+<%= link_to 'Edit', edit_cinema_seance_path(@cinema, @seance) %> |
+<%= link_to 'Back', cinema_seances_path(@cinema) %>
