@@ -2,16 +2,25 @@
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
 </div>
-
-<dl class="dl-horizontal">
-  <dt><strong><%= model_class.human_attribute_name(:heure) %>:</strong></dt>
-  <dd><%= @seance.heure %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:film_id) %>:</strong></dt>
-  <dd><%= @seance.film_id %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:cinema_id) %>:</strong></dt>
-  <dd><%= @seance.cinema_id %></dd>
-</dl>
-
+<% if params[:cinema_id] %>
+  <dl class="dl-horizontal">
+    <dt><strong><%= model_class.human_attribute_name(:heure) %>:</strong></dt>
+    <dd><%= @seance.heure %></dd>
+    <dt><strong><%= model_class.human_attribute_name(:film_id) %>:</strong></dt>
+    <dd> <iframe width="560" height="315" src="<%= Film.find(@seance.film_id).BO %>" frameborder="0" allowfullscreen></iframe></dd>
+    <dt><strong><%= model_class.human_attribute_name(:cinema_id) %>:</strong></dt>
+    <dd><iframe src="<%= Cinema.find(@seance.cinema_id).adresse %>" width="560" height="315" frameborder="0" style="border:0"></iframe></dd>
+  </dl>
+<% elsif params[:film_id] %>
+  <dl class="dl-horizontal">
+    <dt><strong><%= model_class.human_attribute_name(:heure) %>:</strong></dt>
+    <dd><%= @seance.heure %></dd>
+    <dt><strong><%= model_class.human_attribute_name(:film_id) %>:</strong></dt>
+    <dd><%= Film.find(params[:film_id]).titre %></dd>
+    <dt><strong><%= model_class.human_attribute_name(:cinema_id) %>:</strong></dt>
+    <dd><iframe src="<%= Cinema.find(@seance.cinema_id).adresse %>" width="600" height="450" frameborder="0" style="border:0"></iframe></dd>
+  </dl>
+<% end %>
 <div class="form-actions">
   <% if params[:cinema_id] %>
     <%= link_to t('.back', :default => t("helpers.links.back")),
