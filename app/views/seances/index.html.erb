@@ -11,7 +11,8 @@
   </thead>
 
   <tbody>
-    <% @seances.each do |seance| %>
+  <% if params[:cinema_id] %>
+    <% @cinema.seances.each do |seance| %>
       <tr>
         <td><%= seance.heure %></td>
         <td><%= seance.film_id %></td>
@@ -21,9 +22,24 @@
         <td><%= link_to 'Destroy', [@cinema, seance], method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
+  <% elsif params[:film_id] %>
+    <% @film.seances.each do |seance| %>
+      <tr>
+        <td><%= seance.heure %></td>
+        <td><%= seance.film_id %></td>
+        <td><%= seance.cinema_id %></td>
+        <td><%= link_to 'Show', film_seance_path(@film,seance) %></td>
+        <td><%= link_to 'Edit', edit_film_seance_path(@film, seance) %></td>
+        <td><%= link_to 'Destroy', [@film, seance], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  <% end %>
   </tbody>
 </table>
 
 <br>
-
-if <%= link_to 'New Seance', new_cinema_seance_path(@cinema) %>
+<% if params[:cinema_id] %>
+ <%= link_to 'New Seance', new_cinema_seance_path(@cinema) %>
+<% elsif params[:film_id] %>
+ <%= link_to 'New Seance', new_film_seance_path(@film) %>
+<% end %> 

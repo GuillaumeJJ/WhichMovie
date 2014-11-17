@@ -1,11 +1,9 @@
 Rails.application.routes.draw do
 
-  resources :films do
+  resources :films, :cinemas do
      resources :seances
   end
-  resources :cinemas do
-     resources :seances
-  end
+
   
 
   get 'home/index'

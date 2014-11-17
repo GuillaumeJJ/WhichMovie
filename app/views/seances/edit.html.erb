@@ -2,5 +2,12 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Show', cinema_seance_path(@cinema,@seance) %> |
-<%= link_to 'Back', cinema_seances_path(@cinema) %>
+
+<%= if params[:cinema_id] 
+  		link_to 'Show', cinema_seance_path(@cinema,@seance)
+  		link_to 'Back', cinema_seances_path(@cinema)
+ 	elsif params[:film_id] 
+ 		link_to 'Show', film_seance_path(@film,@seance)
+ 		link_to 'Back', film_seances_path(@film)
+   		
+ end %>
