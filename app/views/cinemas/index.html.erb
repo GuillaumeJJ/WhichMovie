@@ -10,23 +10,21 @@
       <th><%= model_class.human_attribute_name(:nom) %></th>
       <th><%= model_class.human_attribute_name(:adresse) %></th>
       <th><%= model_class.human_attribute_name(:seancehoraire) %></th>
-      <th><%= model_class.human_attribute_name(:film_id) %></th>
     </tr>
   </thead>
   <tbody>
     <% @cinemas.each do |cinema| %>
       <tr>
-        <td><%= link_to cinema.id, film_cinema_path(@film, cinema) %></td>
+        <td><%= link_to cinema.id, cinema_path(cinema) %></td>
         <td><%= cinema.ville %></td>
         <td><%= cinema.nom %></td>
         <td><iframe src="<%=cinema.adresse%>" width="600" height="90" frameborder="0" style="border:0"></iframe></td>
         <td><%= cinema.seancehoraire %></td>
-        <td><%= cinema.film_id %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
-                      edit_film_cinema_path(@film, cinema), :class => 'btn btn-mini' %>
+                      edit_cinema_path(cinema), :class => 'btn btn-mini' %>
           <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
-                      film_cinema_path(@film, cinema),
+                      cinema_path(cinema),
                       :method => :delete,
                       :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
                       :class => 'btn btn-mini btn-danger' %>
@@ -37,5 +35,5 @@
 </table>
 
 <%= link_to t('.new', :default => t("helpers.links.new")),
-            new_film_cinema_path,
+            new_cinema_path,
             :class => 'btn btn-primary' %>

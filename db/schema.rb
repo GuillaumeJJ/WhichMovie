@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141106173634) do
+ActiveRecord::Schema.define(version: 20141117091213) do
 
   create_table "cinemas", force: true do |t|
     t.string   "ville"
@@ -28,9 +28,17 @@ ActiveRecord::Schema.define(version: 20141106173634) do
     t.string   "realisateur"
     t.string   "acteurs"
     t.string   "BO"
-    t.text     "synopsis"
+    t.string   "synopsis"
     t.date     "datesortie"
     t.string   "affiche"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "seances", force: true do |t|
+    t.string   "heure"
+    t.integer  "film_id"
+    t.integer  "cinema_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

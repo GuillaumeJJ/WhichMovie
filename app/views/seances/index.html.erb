@@ -1,0 +1,29 @@
+<h1>Listing seances</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Heure</th>
+      <th>Film</th>
+      <th>Cinema</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @seances.each do |seance| %>
+      <tr>
+        <td><%= seance.heure %></td>
+        <td><%= seance.film_id %></td>
+        <td><%= seance.cinema_id %></td>
+        <td><%= link_to 'Show', seance %></td>
+        <td><%= link_to 'Edit', edit_seance_path(seance) %></td>
+        <td><%= link_to 'Destroy', seance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Seance', new_seance_path %>

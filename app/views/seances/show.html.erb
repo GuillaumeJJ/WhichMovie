@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Heure:</strong>
+  <%= @seance.heure %>
+</p>
+
+<p>
+  <strong>Film:</strong>
+  <%= @seance.film_id %>
+</p>
+
+<p>
+  <strong>Cinema:</strong>
+  <%= @seance.cinema_id %>
+</p>
+
+<%= link_to 'Edit', edit_seance_path(@seance) %> |
+<%= link_to 'Back', seances_path %>

@@ -5,7 +5,7 @@ class CreateCinemas < ActiveRecord::Migration
       t.text :adresse
       t.string :seancehoraire
       t.string :nom
-      t.integer :film_id
+     
 
       t.timestamps
     end
