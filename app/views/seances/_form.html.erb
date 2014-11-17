@@ -1,63 +1,55 @@
 <% if params[:cinema_id] %>
-  <%=form_for([@cinema, @seance]) do |f| %>
-    <% if @seance.errors.any? %>
-      <div id="error_explanation">
-        <h2><%= pluralize(@seance.errors.count, "error") %> prohibited this seance from being saved:</h2>
-
-        <ul>
-        <% @seance.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-        </ul>
+  <%= form_for [@cinema,@seance], :html => { :class => 'form-horizontal' } do |f| %>
+    <div class="control-group">
+      <%= f.label :heure, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :heure, :class => 'text_field' %>
       </div>
-    <% end %>
+    </div>
+    <div class="control-group">
+      <%= f.label :film_id, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :film_id, :class => 'text_field' %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :cinema_id, :class => 'control-label' %>
+      <div class="controls">
+        <%= @seance.cinema_id %>
+      </div>
+    </div>
 
-    <div class="field">
-      <%= f.label :heure %><br>
-      <%= f.text_field :heure %>
-    </div>
-    <div class="field">
-      <%= f.label :film_id %><br>
-      <%= f.number_field :film_id %>
-    </div>
-    <div class="field">
-      <%= f.label :cinema_id %><br>
-      <%= f.number_field :cinema_id %>
-  </div>
-    <div class="actions">
-      <%= f.submit %>
+    <div class="form-actions">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                  cinema_seances_path(@cinema), :class => 'btn' %>
     </div>
   <% end %>
-
 <% elsif params[:film_id] %>
-  <%=form_for([@film, @seance]) do |f| %>
-    <% if @seance.errors.any? %>
-      <div id="error_explanation">
-        <h2><%= pluralize(@seance.errors.count, "error") %> prohibited this seance from being saved:</h2>
-
-        <ul>
-        <% @seance.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-        </ul>
+  <%= form_for [@film,@seance], :html => { :class => 'form-horizontal' } do |f| %>
+    <div class="control-group">
+      <%= f.label :heure, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :heure, :class => 'text_field' %>
       </div>
-    <% end %>
+    </div>
+    <div class="control-group">
+      <%= f.label :film_id, :class => 'control-label' %>
+      <div class="controls">
+        <%= @seance.film_id %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :cinema_id, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :cinema_id, :class => 'text_field' %>
+      </div>
+    </div>
 
-    <div class="field">
-      <%= f.label :heure %><br>
-      <%= f.text_field :heure %>
+    <div class="form-actions">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                  film_seances_path(@film), :class => 'btn' %>
     </div>
-    <div class="field">
-      <%= f.label :film_id %><br>
-      <%= f.number_field :film_id %>
-    </div>
-    <div class="field">
-      <%= f.label :cinema_id %><br>
-      <%= f.number_field :cinema_id %>
-  </div>
-    <div class="actions">
-      <%= f.submit %>
-    </div>
-  <% end %>  
+  <% end %>
 <% end %>
-

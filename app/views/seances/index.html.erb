@@ -1,45 +1,69 @@
-<h1>Listing seances</h1>
-
-<table>
+<%- model_class = Seance -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+</div>
+<table class="table table-striped">
   <thead>
     <tr>
-      <th>Heure</th>
-      <th>Film</th>
-      <th>Cinema</th>
-      <th colspan="3"></th>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:heure) %></th>
+      <th><%= model_class.human_attribute_name(:film_id) %></th>
+      <th><%= model_class.human_attribute_name(:cinema_id) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
-
   <tbody>
-  <% if params[:cinema_id] %>
-    <% @cinema.seances.each do |seance| %>
-      <tr>
-        <td><%= seance.heure %></td>
-        <td><%= seance.film_id %></td>
-        <td><%= seance.cinema_id %></td>
-        <td><%= link_to 'Show', cinema_seance_path(@cinema,seance) %></td>
-        <td><%= link_to 'Edit', edit_cinema_seance_path(@cinema, seance) %></td>
-        <td><%= link_to 'Destroy', [@cinema, seance], method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+    <% if params[:cinema_id] %>
+      <% @cinema.seances.each do |seance| %>
+        <tr>
+          <td><%= link_to seance.id, cinema_seance_path(@cinema, seance) %></td>
+          <td><%= seance.heure %></td>
+          <td><%= seance.film_id %></td>
+          <td><%= seance.cinema_id %></td>
+          <td><%=l seance.created_at %></td>
+          <td>
+            <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_cinema_seance_path(@cinema, seance), :class => 'btn btn-mini' %>
+            <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      cinema_seance_path(@cinema, seance),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' %>
+          </td>
+        </tr>
+      <% end %>
+    <% elsif params[:film_id] %>
+      <% @film.seances.each do |seance| %>
+        <tr>
+          <td><%= link_to seance.id, film_seance_path(@film, seance) %></td>
+          <td><%= seance.heure %></td>
+          <td><%= seance.film_id %></td>
+          <td><%= seance.cinema_id %></td>
+          <td><%=l seance.created_at %></td>
+          <td>
+            <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_film_seance_path(@film, seance), :class => 'btn btn-mini' %>
+            <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      film_seance_path(@film, seance),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' %>
+          </td>
+        </tr>
+      <% end %>
     <% end %>
-  <% elsif params[:film_id] %>
-    <% @film.seances.each do |seance| %>
-      <tr>
-        <td><%= seance.heure %></td>
-        <td><%= seance.film_id %></td>
-        <td><%= seance.cinema_id %></td>
-        <td><%= link_to 'Show', film_seance_path(@film,seance) %></td>
-        <td><%= link_to 'Edit', edit_film_seance_path(@film, seance) %></td>
-        <td><%= link_to 'Destroy', [@film, seance], method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  <% end %>
   </tbody>
 </table>
 
-<br>
 <% if params[:cinema_id] %>
- <%= link_to 'New Seance', new_cinema_seance_path(@cinema) %>
-<% elsif params[:film_id] %>
- <%= link_to 'New Seance', new_film_seance_path(@film) %>
-<% end %> 
+    <%= link_to t('.new', :default => t("helpers.links.new")),
+            new_cinema_seance_path(@cinema),
+            :class => 'btn btn-primary'%>
+   <% elsif params[:film_id] %>
+  <%= link_to t('.new', :default => t("helpers.links.new")),
+            new_film_seance_path(@film),
+            :class => 'btn btn-primary'%>
+   <% end%>
+    
+

@@ -1,26 +1,37 @@
-<p id="notice"><%= notice %></p>
+<%- model_class = Seance -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+</div>
 
-<p>
-  <strong>Heure:</strong>
-  <%= @seance.heure %>
-</p>
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:heure) %>:</strong></dt>
+  <dd><%= @seance.heure %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:film_id) %>:</strong></dt>
+  <dd><%= @seance.film_id %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:cinema_id) %>:</strong></dt>
+  <dd><%= @seance.cinema_id %></dd>
+</dl>
 
-<p>
-  <strong>Film:</strong>
-  <%= @seance.film_id %>
-</p>
-
-<p>
-  <strong>Cinema:</strong>
-  <%= @seance.cinema_id %>
-</p>
-
-
-<%= if params[:cinema_id] 
-  		link_to 'Edit', edit_cinema_seance_path(@cinema, @seance)
-  		link_to 'Back', cinema_seances_path(@cinema)
- 	elsif params[:film_id] 
- 		link_to 'Edit', edit_film_seance_path(@film, @seance)
- 		link_to 'Back', film_seances_path(@film)
-   		
- end %>
+<div class="form-actions">
+  <% if params[:cinema_id] %>
+    <%= link_to t('.back', :default => t("helpers.links.back")),
+              cinema_seances_path(@cinema), :class => 'btn'  %>
+    <%=link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_cinema_seance_path(@cinema, @seance), :class => 'btn' %>
+    <%=link_to t('.destroy', :default => t("helpers.links.destroy")),
+              cinema_seance_path(@cinema, @seance),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+  <% elsif params[:film_id]%>
+    <%=link_to t('.back', :default => t("helpers.links.back")),
+              film_seances_path(@film), :class => 'btn'  %>
+    <%=link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_film_seance_path(@film, @seance), :class => 'btn' %>
+    <%=link_to t('.destroy', :default => t("helpers.links.destroy")),
+              film_seance_path(@film, @seance),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+  <% end %>
+</div>
