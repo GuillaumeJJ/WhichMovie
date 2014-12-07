@@ -136,6 +136,7 @@ DEPENDENCIES
   puma
   rails (= 4.1.0)
   rails_12factor
+  rake (~> 10.3.2)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spring

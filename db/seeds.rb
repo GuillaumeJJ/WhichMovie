@@ -16,17 +16,17 @@ Film.create(
 	)
 
 Film.create(
-	titre: "Ninja Turtles",
-	realisateur: "Jonathan Liebesman",
-	acteurs: "Megan Fox, Will Arnett, William Fichtner",
-	BO: "//www.youtube.com/embed/mff5fnnoYmM",
-	synopsis:"New York City a sombré dans les ténèbres depuis que Shredder et son cruel clan des Foot ont la mainmise sur la ville, des forces de police aux politiciens. Alors que l’avenir semble sans espoir, quatre frères en marge de la société sortent des entrailles de la ville pour accomplir leur destin de Tortues Ninja.",
-	datesortie:"2014-9-15",
-	affiche:"http://fr.web.img4.acsta.net/newsv7/14/09/09/16/51/057294.jpg",
+	titre: "Asterix - Le Domaine des Dieux",
+	realisateur: "Louis Clichy",
+	acteurs: "Roger Carel, Guillaume Briat, Lorant Deutsch",
+	BO: "//www.youtube.com/embed/U6y63JW_qv0",
+	synopsis:"Nous sommes en 50 avant Jésus-Christ ; toute la Gaule est occupée par les Romains… Toute ? Non ! Car un village peuplé d'irréductibles Gaulois résiste encore et toujours à l'envahisseur. Exaspéré par la situation, Jules César décide de changer de tactique : puisque ses armées sont incapables de s’imposer par la force, c’est la civilisation romaine elle-même qui saura  séduire ces barbares Gaulois. Il fait donc construire à côté du village un domaine résidentiel luxueux destiné à des propriétaires romains. : « Le Domaine des Dieux  ». Nos amis gaulois résisteront ils à l’appât du gain et au confort romain ? Leur village deviendra-t-il une simple attraction touristique ? Astérix et Obélix vont tout faire pour contrecarrer les plans de César.",
+	datesortie:"2014-11-26",
+	affiche:"http://images.allocine.fr/r_640_600/b_1_d6d6d6/pictures/14/12/05/11/15/546054.jpg",
 	)
 
 Film.create(
-	titre: "Le Labyrinthe",
+	titre: "Le Labirynthe",
 	realisateur: "Wes Ball",
 	acteurs: "Dylan O'Brien, Aml Ameen, Will Poulter",
 	BO: "//www.youtube.com/embed/PL6nMcpeb8I",
@@ -36,93 +36,95 @@ Film.create(
 	)
 
 Film.create(
-	titre: "Gone Girl",
-	realisateur: "David Fincher",
-	acteurs: "Ben Affleck, Rosamund Pike, Neil Patrick Harris",
-	BO: "//www.youtube.com/embed/ykIaPN3fv-c",
-	synopsis:"A l’occasion de son cinquième anniversaire de mariage, Nick Dunne signale la disparition de sa femme, Amy. Sous la pression de la police et l’affolement des médias, l’image du couple modèle commence à s’effriter. Très vite, les mensonges de Nick et son étrange comportement amènent tout le monde à se poser la même question : a-t-il tué sa femme ?",
-	datesortie:"2014-9-8",
-	affiche:"http://fr.web.img5.acsta.net/pictures/14/09/11/17/05/508784.jpg",
+	titre: "Hunger Games - La Revolte : Partie 1",
+	realisateur: "Francis Lawrence",
+	acteurs: "Jennifer Lawrence, Josh Hutcherson, Liam Hemsworth",
+	BO: "//www.youtube.com/embed/zdMIft77FEY",
+	synopsis:"Katniss Everdeen s’est réfugiée dans le District 13 après avoir détruit à jamais l’arène et les Jeux. Sous le commandement de la Présidente Coin, chef du district, et suivant les conseils de ses amis en qui elle a toute confiance, Katniss déploie ses ailes pour devenir le symbole de la rébellion.",
+	datesortie:"2014-11-19",
+	affiche:"http://fr.web.img1.acsta.net/r_640_600/b_1_d6d6d6/pictures/14/12/05/17/25/453259.jpg",
 	)
 
 Film.create(
-	titre: "Mommy",
-	realisateur: "Xavier Dolan",
-	acteurs: "Antoine-Olivier Pilon, Anne Dorval, Suzanne Clément",
-	BO: "//www.youtube.com/embed/8X1fB4ylVuk",
-	synopsis:"Une veuve mono-parentale hérite de la garde de son fils, un adolescent profondément turbulent. Ensemble, ils tentent de joindre les deux bouts, notamment grâce à l’aide inattendue de la mystérieuse voisine d’en face, Kyla.",
-	datesortie:"2014-9-8",
-	affiche:"http://www.tuxboard.com/photos/2014/08/Mommy-Affiche.jpg",
+	titre: "La French",
+	realisateur: "Cedric Jimenez",
+	acteurs: "Jean Dujardin, Gilles Lellouche, Celine Sallette",
+	BO: "//www.youtube.com/embed/46TnVj88Fh4",
+	synopsis:"L'histoire du destin tragique du célèbre juge Michel, assassiné en 1981 par la Pègre marseillaise.",
+	datesortie:"2014-12-03",
+	affiche:"http://fr.web.img5.acsta.net/r_640_600/b_1_d6d6d6/pictures/14/11/06/14/03/128118.jpg",
 	)
 
 Film.create(
-	titre: "Le Grimoire d'Arkandias",
-	realisateur: "Alexandre Castagnetti, Julien Simonet",
-	acteurs: "Christian Clavier, Ryan Brodie, Pauline Brisy",
-	BO: "//www.youtube.com/embed/g7SBmicz__o",
-	synopsis:"Dans le village de Ronenval, tout semble normal. Trop normal pour Théo qui ne rêve que d’une chose : échapper à son destin de boloss. Un jour, il déniche à la bibliothèque un livre de magie qui contient les secrets de fabrication d’une bague d’invisibilité.",
-	datesortie:"2014-9-22",
-	affiche:"http://fr.web.img5.acsta.net/pictures/14/09/15/11/29/422299.jpg",
+	titre: "Paddington",
+	realisateur: "Paul King",
+	acteurs: "Ben Whishaw, Hugh Bonneville, Sally Hawkings",
+	BO: "//www.youtube.com/embed/iAiMhMSebeU",
+	synopsis:"Paddington raconte l'histoire d'un jeune ours péruvien fraîchement débarqué à Londres, à la recherche d'un foyer et d'une vie meilleure. Il réalise vite que la ville de ses rêves n'est pas aussi accueillante qu'il croyait. Par chance, il rencontre la famille Brown et en devient peu à peu un membre à part entière.",
+	datesortie:"2014-12-03",
+	affiche:"http://fr.web.img6.acsta.net/r_640_600/b_1_d6d6d6/pictures/14/12/05/10/53/508053.jpg",
 	)
 
 Film.create(
-	titre: "Magic in the Moonlight",
-	realisateur: "Woody Allen",
-	acteurs: "Colin Firth, Emma Stone, Eileen Atkins",
-	BO: "//www.youtube.com/embed/YKRfaB9OJiI",
-	synopsis:"Le prestidigitateur chinois Wei Ling Soo est le plus célèbre magicien de son époque, mais rares sont ceux à savoir qu’il s’agit en réalité du nom de scène de Stanley Crawford : cet Anglais arrogant et grognon ne supporte pas les soi-disant médiums qui prétendent prédire l’avenir.",
-	datesortie:"2014-9-22",
-	affiche:"http://odysseeducinema.files.wordpress.com/2014/09/magicinthemoonlight.jpg",
+	titre: "Le Hobbit : la Bataille des Cinq Armées",
+	realisateur: "Peter Jackson",
+	acteurs: "Ian McKellen, Martin Freeman, Richard Armitage",
+	BO: "//www.youtube.com/embed/bj9Wkql11QY",
+	synopsis:"La bataille des cinq armées est imminente et Bilbon est le seul à pouvoir unir ses amis contre les puissances obscures de Sauron.",
+	datesortie:"2014-12-10",
+	affiche:"http://fr.web.img4.acsta.net/r_640_600/b_1_d6d6d6/pictures/14/11/14/17/43/568445.jpg",
 	)
 
 Film.create(
-	titre: "Fury",
-	realisateur: "David Ayer",
-	acteurs: "Brad Pitt, Shia LaBeouf, Logan Lerman",
-	BO: "//www.youtube.com/embed/q94n3eWOWXM",
-	synopsis:"Avril 1945. Les Alliés mènent leur ultime offensive en Europe. À bord d’un tank Sherman, le sergent Wardaddy et ses quatre hommes s’engagent dans une mission à très haut risque bien au-delà des lignes ennemies.",
-	datesortie:"2014-9-22",
-	affiche:"http://fr.web.img4.acsta.net/newsv7/14/06/24/19/18/178449.jpg",
+	titre: "Le Pere Noel",
+	realisateur: "Alexandre Coffre",
+	acteurs: "Tahar Rahim, Victor Cabal, Annelise Hesme",
+	BO: "//www.youtube.com/embed/QS6HEt7yzwQ",
+	synopsis:"En cette nuit de Noël, Antoine, six ans, n’a qu’une idée en tête : rencontrer le Père Noël et faire un tour de traîneau avec lui dans les étoiles… 
+Alors quand celui-ci tombe comme par magie sur son balcon, Antoine est trop émerveillé pour voir en ce Père Noël un cambrioleur déguisé, qui dérobe les bijoux dans les appartements des beaux quartiers.
+Et malgré tous les efforts du Père Noël pour se débarrasser d’un Antoine déterminé, ils vont former alors un duo invraisemblable, parcourant Paris de toit en toit, chacun à la recherche de son rêve…",
+	datesortie:"2014-12-10",
+	affiche:"http://fr.web.img6.acsta.net/r_640_600/b_1_d6d6d6/pictures/14/12/05/18/06/148776.jpg",
 	)
 
 Film.create(
-	titre: "On a marché sur Bangkok",
-	realisateur: "Olivier Baroux",
-	acteurs: "Kad Merad, Alice Taglioni, Peter Coyote",
-	BO: "//www.youtube.com/embed/WM72m0bESq4",
-	synopsis:"Serge Renart, un journaliste TV devenu has-been et Natacha Bison, une reporter de guerre écartée du métier parce que trop dangereuse pour ses collègues, se retrouvent obligés d’enquêter ensemble sur une affaire qui les mènera en Thaïlande...",
-	datesortie:"2014-9-22",
-	affiche:"http://static1.purepeople.com/articles/4/14/35/34/@/1516164-on-a-marche-sur-bangkok-950x0-1.jpg",
+	titre: "Qu'Allah Benisse la France",
+	realisateur: "Abd Al Malik",
+	acteurs: "Marc Zinga, Sabrina Ouazani, Larouci Didi",
+	BO: "//www.youtube.com/embed/WROeWXhd5nc",
+	synopsis:"Adapté du livre autobiographique de Abd Al Malik, QU'ALLAH BENISSE LA FRANCE raconte le parcours de Régis, enfant d'immigrés, noir, surdoué, élevé par sa mère catholique avec ses deux frères, dans une cité de Strasbourg. Entre délinquance, rap et islam, il va découvrir l'amour et trouver sa voie.",
+	datesortie:"2014-12-10",
+	affiche:"http://fr.web.img6.acsta.net/r_640_600/b_1_d6d6d6/pictures/14/11/25/12/28/384403.jpg",
 	)
 
 Film.create(
-	titre: "La Légende de Manolo",
-	realisateur: "Jorge R. Gutierrez",
-	acteurs: "Diego Luna, Zoe Saldana, Channing Tatum",
-	BO: "//www.youtube.com/embed/oZxd8_W8F0Q",
-	synopsis:"Le jeune Manolo est tiraillé entre les attentes de sa famille et ce vers quoi son coeur le porte. Avant de choisir de s'engager sur une voie, il embarque pour une incroyable aventure, qui le conduit dans trois mondes fantastiques, où il lui faudra affronter ses plus grandes peurs.",
-	datesortie:"2014-9-22",
-	affiche:"http://meilleurpapadumonde.com/wp-content/uploads/2014/08/Affiche-Legende-Manolo.jpg",
+	titre: "Mr. Turner",
+	realisateur: "Mike Leigh",
+	acteurs: "Timothy Spall, Paul Jesson, Dorothy Atkinson",
+	BO: "//www.youtube.com/embed/Tn4zSR_5ioI",
+	synopsis:"Les dernières années de l’existence du peintre britannique, J.M.W Turner (1775-1851). Artiste reconnu, membre apprécié quoique dissipé de la Royal Academy of Arts, il vit entouré de son père qui est aussi son assistant, et de sa dévouée gouvernante.",
+	datesortie:"2014-12-03",
+	affiche:"http://fr.web.img4.acsta.net/r_640_600/b_1_d6d6d6/pictures/14/09/24/10/58/198016.jpg",
 	)
 
 Film.create(
-	titre: "Les Boxtrolls",
-	realisateur: "Graham Annable, Anthony Stacchi",
-	acteurs: "Isaac Hempstead-Wright, Elle Fanning, Ben Kingsley",
-	BO: "//www.youtube.com/embed/CSomVLvah34",
-	synopsis:"Les Boxtrolls est une fable qui se déroule à Cheesebridge, une ville huppée de l’époque victorienne, dont la principale préoccupation est le luxe, la distinction et la crème des fromages les plus puants. Sous le charme de ses rues pavées, se cachent les Boxtrolls...",
-	datesortie:"2014-9-15",
-	affiche:"http://fr.web.img6.acsta.net/pictures/14/09/04/16/11/561050.jpg",
+	titre: "Iranien",
+	realisateur: "Mehran Tamadon",
+	acteurs: "Mehran Tamadon",
+	BO: "//www.youtube.com/embed/9cB9GqVbrBU",
+	synopsis:"Iranien athée, le réalisateur Mehran Tamadon a réussi à convaincre quatre mollahs, partisans de la République Islamique d’Iran, de venir habiter et discuter avec lui pendant deux jours.",
+	datesortie:"2014-12-3",
+	affiche:"http://fr.web.img2.acsta.net/r_640_600/b_1_d6d6d6/pictures/14/09/25/16/47/099330.jpg",
 	)
 
 Film.create(
-	titre: "Une nouvelle amie",
-	realisateur: "Francois Ozon",
-	acteurs: "Romain Duris, Anaïs Demoustier, Raphaël Personnaz",
-	BO: "//www.youtube.com/embed/lxNUmOe-dhY",
-	synopsis:"À la suite du décès de sa meilleure amie, Claire fait une profonde dépression, mais une découverte surprenante au sujet du mari de son amie va lui redonner goût à la vie.",
-	datesortie:"2014-10-5",
-	affiche:"http://framboisemood.files.wordpress.com/2014/09/affiche1.jpg",
+	titre: "Nightcall",
+	realisateur: "Dan Gilroy",
+	acteurs: "Jake Gyllenhaal, Rene Russo, Riz Ahmed",
+	BO: "//www.youtube.com/embed/qERsXbpu58w",
+	synopsis:"Branché sur les fréquences radios de la police, Lou parcourt Los Angeles la nuit à la recherche d’images choc qu’il vend à prix d’or aux chaînes de TV locales. La course au spectaculaire n'aura aucune limite...",
+	datesortie:"2014-11-26",
+	affiche:"http://fr.web.img5.acsta.net/r_640_600/b_1_d6d6d6/pictures/14/10/20/18/02/332744.jpg",
 	)
 
 
