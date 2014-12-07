@@ -1,6 +1,7 @@
 class FilmsController < ApplicationController
-  before_action :set_film, only: [:show, :edit, :update, :destroy]
+  before_action :set_film, only: [:show, :edit, :update, :destroy, :like]
 
+  skip_before_action :verify_authenticity_token, only: [:like]
   # GET /films
   # GET /films.json
   def index
@@ -61,6 +62,22 @@ class FilmsController < ApplicationController
     end
   end
 
+#definition du like
+  def like
+    # On crée un nouvel objet booking à partir des paramètres reçus
+    @like = Like.new(like_params)
+    # On précise que cet object Booking dépend du show concerné
+    @like.film = @film
+
+    respond_to do |format|
+      if @like.save
+        format.json
+      else
+        format.json { render json: @like.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_film
@@ -70,5 +87,9 @@ class FilmsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def film_params
       params.require(:film).permit(:titre, :realisateur, :acteurs, :BO, :synopsis, :datesortie,:affiche)
+    end
+
+    def like_params
+      params.require(:like).permit(:user_name)
     end
 end
