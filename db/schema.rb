@@ -15,10 +15,9 @@ ActiveRecord::Schema.define(version: 20141207113633) do
 
   create_table "cinemas", force: true do |t|
     t.string   "ville"
-    t.string   "adresse"
+    t.text     "adresse"
     t.string   "seancehoraire"
     t.string   "nom"
-    t.integer  "film_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -28,15 +27,9 @@ ActiveRecord::Schema.define(version: 20141207113633) do
     t.string   "realisateur"
     t.string   "acteurs"
     t.string   "BO"
-    t.string   "synopsis"
+    t.text     "synopsis"
     t.date     "datesortie"
     t.string   "affiche"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "identifications", force: true do |t|
-    t.string   "user_name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

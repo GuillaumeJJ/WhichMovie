@@ -12,7 +12,7 @@ Film.create(
 	   BO: "//www.youtube.com/embed/VaOijhK3CRU",
 	   synopsis:"Le film raconte les aventures d’un groupe d’explorateurs qui utilisent une faille récemment découverte dans l’espace-temps afin de repousser les limites humaines et partir à la conquête des distances astronomiques dans un voyage interstellaire." ,
 	   datesortie:"2014-10-5",
-	   affiche: "http://static1.purepeople.com/articles/9/14/75/79/@/1589511-nouvelle-affiche-d-interstellar-film-950x0-1.jpg",
+	   affiche: "http://fr.web.img2.acsta.net/r_640_600/b_1_d6d6d6/pictures/14/09/24/12/08/158828.jpg",
 	)
 
 Film.create(
@@ -32,7 +32,7 @@ Film.create(
 	BO: "//www.youtube.com/embed/PL6nMcpeb8I",
 	synopsis:"Quand Thomas reprend connaissance, il est pris au piège avec un groupe d’autres garçons dans un labyrinthe géant dont le plan est modifié chaque nuit. Il n’a plus aucun souvenir du monde extérieur, à part d’étranges rêves à propos d’une mystérieuse organisation appelée W.C.K.D.",
 	datesortie:"2014-9-15",
-	affiche:"http://www.tvhland.com/vignette/image/201409/541bd6a0ef459.jpg",
+	affiche:"http://fr.web.img4.acsta.net/r_640_600/b_1_d6d6d6/pictures/14/09/18/14/58/418353.jpg",
 	)
 
 Film.create(
