@@ -26,7 +26,7 @@ Film.create(
 	)
 
 Film.create(
-	titre: "Le Labirynthe",
+	titre: "Le Labyrinthe",
 	realisateur: "Wes Ball",
 	acteurs: "Dylan O'Brien, Aml Ameen, Will Poulter",
 	BO: "//www.youtube.com/embed/PL6nMcpeb8I",
