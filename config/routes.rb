@@ -8,7 +8,8 @@ Rails.application.routes.draw do
 
   get 'home/index'
   root 'home#index'
-  post 'films/:id/like' => 'films#like'
+  post 'films/:id/like' => 'films#send_like'
+  get 'films/:id/likes' => 'films#show_likes'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
