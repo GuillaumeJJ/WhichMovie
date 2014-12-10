@@ -1,5 +1,5 @@
 class FilmsController < ApplicationController
-  before_action :set_film, only: [:show, :edit, :update, :destroy, :send_like]
+  before_action :set_film, only: [:show, :edit, :update, :destroy, :send_like, :show_likes]
 
   skip_before_action :verify_authenticity_token, only: [:send_like]
   # GET /films
@@ -65,6 +65,7 @@ class FilmsController < ApplicationController
 #definition du like
   def send_like
     # On crée un nouvel objet booking à partir des paramètres reçus
+    @other_likes=@film.likes
     @like = Like.new(like_params)
     # On précise que cet object Booking dépend du show concerné
     @like.film = @film
@@ -80,7 +81,7 @@ class FilmsController < ApplicationController
   end
 
   def show_likes
-    @likes= Like.all.order("film_id ASC")
+    @likes= @film.likes
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @likes}
