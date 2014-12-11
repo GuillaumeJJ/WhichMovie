@@ -2,7 +2,7 @@ class CinemasController < ApplicationController
   before_action :set_cinema, only: [:show, :edit, :update, :destroy]
   # GET /cinemas
   # GET /cinemas.json
-
+  skip_before_action :verify_authenticity_token
   def index
     @cinemas = Cinema.all
   end
